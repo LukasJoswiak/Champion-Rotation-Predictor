@@ -230,7 +230,7 @@ main {
 	}
 
 	article.rotation {
-		margin: 20px 0;
+		margin: 20px 0 0 0;
 
 		ul {
 			list-style-type: none;
@@ -550,6 +550,10 @@ main {
 				}
 			}
 		}
+	}
+
+	#ad {
+		margin: 10px 0;
 	}
 }
 
