@@ -196,6 +196,19 @@ function standardDeviation($arr) {
 	</header>
 
 	<main>
+		<div id="ad">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Champion Rotation Predictor -->
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-5514616542575292"
+				 data-ad-slot="6477755013"
+				 data-ad-format="auto"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+
 		<section id="search">
 			<form action="" method="POST" id="search-form" onsubmit="return searchSubmit();">
 				<div class="flex-container">
