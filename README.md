@@ -4,4 +4,4 @@ Visit online at [https://rotation.lukasjoswiak.com](https://rotation.lukasjoswia
 
 League of Legends champion rotation predictor. This website uses past champion rotation data to predict when a champion will be free next.
 
-See the python files in `scrape/` for tools to get past rotation history and new weekly rotation.
+See the Python files in `scrape/` for tools to get past rotation history and new weekly rotation.
