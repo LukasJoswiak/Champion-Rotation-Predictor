@@ -22,7 +22,10 @@ soup = BeautifulSoup(requests.get(link).text, 'html.parser')
 cards = soup.findAll('div', { 'class': 'f2p-card' })
 
 for card in cards:
-    champion = card.find('span', { 'class': 'champion-name' }).findAll(text=True)[1]
+    span = card.find('span', { 'class': 'champion-name' }).findAll(text=True)
+    champion = span[0].strip() # deals with case where champion name is not a link
+    if len(span) > 1:
+        champion = span[1]
     data['champions'].append(champion)
 
 
