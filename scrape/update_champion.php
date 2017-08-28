@@ -13,6 +13,7 @@ if (isset($_POST['data']) && isset($_POST['key'])) {
 			$date = date("Y-m-d", strtotime($object->date));
 			$champion = $object->champion;
 
+			echo "FAKE, update file: Updated " . $champion . " with release date: " . $date . "\n";
 			/*
 			 * Uncomment when using
 			if ($update->champion($champion, $date)) {

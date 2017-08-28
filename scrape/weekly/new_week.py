@@ -10,17 +10,10 @@ execfile('../keys.py')
 # from here.
 url = 'http://na.leagueoflegends.com/en/news/champions-skins/free-rotation'
 
-# Static champion data. Used to get the ID of the champion to insert in the database.
-champion_data_url = 'https://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/champion.json'
-
 # URL to send data to, which handles insertion into database.
 send_url = 'http://localhost/scrape/weekly/new_week.php'
 
 data = { 'key': week_key, 'champions': [] } # make sure key matches in file
-
-# Get static data and set as property on data object.
-raw_data = requests.get(champion_data_url).json()
-data['champion_data'] = raw_data['data']
 
 soup = BeautifulSoup(requests.get(url).text, 'html.parser')
 

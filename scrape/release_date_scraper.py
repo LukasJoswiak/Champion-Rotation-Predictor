@@ -18,6 +18,7 @@ index = 0
 for tr in trs:
 	td = tr.findAll('td')
 	champion = td[0::1]
+        print champion
 	date = td[7::8]
 
 	if len(champion) > 0:
